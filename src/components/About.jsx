@@ -33,7 +33,7 @@ function About() {
         }}
       >
         <Typography variant="h5">Marc Cuesta Carabasa</Typography>
-        <Typography variant="p">
+        <Typography variant="body2">
           Soy un desarrollador web full-stack apasionado por aprender y
           evolucionar, perfeccionista y que presta gran atención a los detalles.
           Me comunico de forma efectiva y asertiva para brindar excelentes
