@@ -1,15 +1,20 @@
 import './App.css';
-import { About, NavBar, Projects } from "./components";
-
+import { About, Certificates, Footer, NavBar, Projects, Skills } from "./components";
 
 function App() {
+  
   return (
     <div className="App">
+      
+
       <NavBar />
       <About />
       <Projects />
+      <Skills />
+      <Certificates />
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;

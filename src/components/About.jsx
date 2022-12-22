@@ -1,13 +1,14 @@
 import React from "react";
-import Photo from "../assets/img/avatar.jpg";
-import GitHubLogo from "../assets/img/github-logo.png";
-import LinkedInLogo from "../assets/img/linkedin-logo.png";
-import CvIcon from "../assets/img/CV-icon.png";
+import photo from "../assets/img/avatar.jpg";
+import githubLogo from "../assets/img/github-logo.png";
+import linkedinLogo from "../assets/img/linkedin-logo.png";
+import cvIcon from "../assets/img/CV-icon.png";
 
 import { Avatar, Box, Button, Typography } from "@mui/material";
 
 function About() {
   return (
+    
     <Box
       sx={{
         display: "flex",
@@ -17,22 +18,23 @@ function About() {
         flexWrap: "wrap",
       }}
     >
-      <Avatar
+
+       <Avatar
         alt="Marc's photo"
-        src={Photo}
-        sx={{ width: 200, height: 200, display: "flex" }}
-      />
+        src={photo}
+        sx={{ width: 200, height: 200, display: "flex", flexDirection: "row", justifyContent: "center" }}
+      /> 
       <Box
         sx={{
           display: "flex",
           flexDirection: "column",
           width: 500,
-          height: 200,
+          height: 250,
           marginLeft: "2rem",
           marginTop: "1rem",
         }}
       >
-        <Typography variant="h5">Marc Cuesta Carabasa</Typography>
+        <Typography variant="h5" component="div">Marc Cuesta Carabasa</Typography>
         <Typography variant="body2">
           Soy un desarrollador web full-stack apasionado por aprender y
           evolucionar, perfeccionista y que presta gran atención a los detalles.
@@ -56,7 +58,7 @@ function About() {
             sx={{ textTransform: "none", color: "#CBC5AA", height: "3rem" }}
           >
             <img
-              src={GitHubLogo}
+              src={githubLogo}
               alt="GitHub Logo"
               height="50%"
               style={{ marginRight: "0.3rem" }}
@@ -69,7 +71,7 @@ function About() {
             sx={{ textTransform: "none", color: "#CBC5AA", height: "3rem" }}
           >
             <img
-              src={LinkedInLogo}
+              src={linkedinLogo}
               alt="LinkedIn Logo"
               height="46%"
               style={{ marginRight: "0.3rem" }}
@@ -82,7 +84,7 @@ function About() {
             sx={{ textTransform: "none", color: "#CBC5AA", height: "3rem" }}
           >
             <img
-              src={CvIcon}
+              src={cvIcon}
               alt="CV Icon"
               height="48%"
               style={{ marginRight: "0.3rem" }}
@@ -92,6 +94,7 @@ function About() {
         </Box>
       </Box>
     </Box>
+
   );
 }
 

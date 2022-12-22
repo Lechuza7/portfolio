@@ -7,14 +7,11 @@ import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
 import Collapse from '@mui/material/Collapse';
-import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import { red } from '@mui/material/colors';
-import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
+import VisibilityIcon from '@mui/icons-material/Visibility';
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -36,16 +33,11 @@ export default function ProjectCard( project ) {
   };
 
   return (
-    <Card sx={{ maxWidth: 300, minWidth: 200, margin: 3 }}>
+    <Card sx={{ maxWidth: 300, minWidth: 200, margin: 2 }}>
       <CardHeader
-        avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            M
-          </Avatar>
-        }
         action={
           <IconButton aria-label="settings">
-            <MoreVertIcon />
+            <VisibilityIcon />
           </IconButton>
         }
         title={project.title}
@@ -58,14 +50,12 @@ export default function ProjectCard( project ) {
         alt={project.title}
       />
       <CardContent>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="body2" color="text.primary">
           {project.techs}
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
-          <FavoriteIcon />
-        </IconButton>
+
         <IconButton aria-label="share">
           <ShareIcon />
         </IconButton>
@@ -80,7 +70,7 @@ export default function ProjectCard( project ) {
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
-        <Typography variant="subtitle2">Description</Typography>
+        <Typography variant="subtitle2" sx={{ fontWeight: "bold" }}>Description</Typography>
         <Typography variant="body2">{project.description}</Typography>
         </CardContent>
       </Collapse>
