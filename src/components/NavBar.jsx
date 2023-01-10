@@ -289,22 +289,22 @@ function NavBar() {
             <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
               <MenuItem onClick={handleCloseNavMenu}>
                 <Button href="#my-projects">
-                  <Typography textAlign="center">Projects</Typography>
+                  <Typography sx={{textAlign:"center", color:"white"}}>Projects</Typography>
                 </Button>
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
                 <Button href="#my-skills">
-                  <Typography textAlign="center">Skills</Typography>
+                  <Typography sx={{textAlign:"center", color:"white"}}>Skills</Typography>
                 </Button>
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
                 <Button href="#my-certificates">
-                  <Typography textAlign="center">Certificates</Typography>
+                  <Typography sx={{textAlign:"center", color:"white"}}>Certificates</Typography>
                 </Button>
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
                 <Button href="mailto:marc.cuestacarabasa@gmail.com">
-                  <Typography textAlign="center">Contact</Typography>
+                  <Typography sx={{textAlign:"center", color:"white"}}>Contact</Typography>
                 </Button>
               </MenuItem>
             </Box>
