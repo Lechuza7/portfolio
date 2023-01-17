@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import ProjectCard from "./ProjectCard";
-import projectsData from "../projects.json";
+import projectsData from "../data/projects.json";
 import { LangContext } from "../contexts/LangContext";
 
 import { Typography, Box } from "@mui/material";
@@ -86,3 +86,6 @@ function Projects() {
 };
 
 export default Projects;
+
+
+

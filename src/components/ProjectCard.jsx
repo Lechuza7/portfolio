@@ -10,7 +10,6 @@ import CardActions from "@mui/material/CardActions";
 import Collapse from "@mui/material/Collapse";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import ShareIcon from "@mui/icons-material/Share";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 
@@ -42,7 +41,7 @@ export default function ProjectCard(project) {
     <Card sx={{ maxWidth: 300, minWidth: 200, margin: 2 }}>
       <CardHeader
         action={
-          <IconButton aria-label="settings" href={project.url} target="_blank" >
+          <IconButton aria-label="Visit project" href={project.url} target="_blank" >
             <VisibilityIcon />
           </IconButton>
         }
@@ -83,7 +82,7 @@ export default function ProjectCard(project) {
     <Card sx={{ maxWidth: 300, minWidth: 200, margin: 2 }}>
       <CardHeader
         action={
-          <IconButton aria-label="settings" href={project.url} target="_blank" >
+          <IconButton aria-label="Visit project" href={project.url} target="_blank" >
             <VisibilityIcon />
           </IconButton>
         }

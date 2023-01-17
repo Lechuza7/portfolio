@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Project Frogger",
+    "spDate": "Junio 2022",
+    "enDate": "June 2022",
+    "image": "https://res.cloudinary.com/dyl3cklgp/image/upload/v1671560031/portfolio/frogger-cover_mgtd0i.png",
+    "techs": "Javascript (ES6), HTML5, CSS3, Canvas",
+    "url": "https://lechuza7.github.io/module1-project-frogger",
+    "spDescription": "Project Frogger es una versión del clásico videojuego Frogger tematizado con sprites de Star Wars, en el que deberás conseguir capturar a todos los líderes rebeldes sin morir en el intento. Fué el primer proyecto que desarrollé, usando Canvas.",
+    "enDescription": "Project Frogger is a version of the classic videogame Frogger themed with Star Wars sprites, in which you must manage to capture all the rebel leaders without dying in the attempt. It was the first project I developed, using Canvas."
+  },
+  {
+    "title": "Furancho Project",
+    "spDate": "Agosto 2022",
+    "enDate": "August 2022",
+    "image": "https://res.cloudinary.com/dyl3cklgp/image/upload/v1673778206/portfolio/furancho-cover_rti9qk.png",
+    "techs": "Javascript (ES6), HTML5, CSS3, NodeJS, ExpressJS, MongoDB, Mongoose, Bootstrap, Handlebars, Multer",
+    "url": "https://github.com/furancho-project/furancho-project",
+    "spDescription": "Furancho Project es mi segundo proyecto, creado en pareja. Se trata de un buscador de furanchos con integración de Google Maps y geolocalización, y registro, sesión y perfil de usuario.",
+    "enDescription": "Furancho Project is my second project, created as a couple. It's a furanchos search engine with integration of Google Maps and geolocation, and registration, session and user profile."
+  },
+  {
+    "title": "Xan Campos Website",
+    "spDate": "Octubre 2022",
+    "enDate": "October 2022",
+    "image": "https://res.cloudinary.com/dyl3cklgp/image/upload/v1673778238/portfolio/xancampos-cover_lefgrx.png",
+    "techs": "ReactJS, Javascript (ES6), HTML5, CSS3, NodeJS, ExpressJS, MongoDB, Mongoose, Bootstrap, Multer, Axios, Nodemailer",
+    "url": "https://github.com/TheOfficeHackers/xan-campos-website",
+    "spDescription": "Xan Campos Website es un proyecto de web personal del pianista gallego de jazz Xan Campos, creado en pareja. Integra distintas vistas con toda la información del artista, así como el API de Spotify, y un panel oculto de gestión de admin.",
+    "enDescription": "Xan Campos Website is a personal web project of the Galician jazz pianist Xan Campos, created as a couple. It integrates different views with all the artist's information, as well as the Spotify API, and a hidden admin management panel."
+  }
+]
