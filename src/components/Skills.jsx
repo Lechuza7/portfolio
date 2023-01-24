@@ -13,7 +13,7 @@ function Skills() {
   }, [language]);
 
   return lang?.lang === "esp" ? (
-    <div id="my-skills" style={{ paddingTop: "0.5rem" }}>
+    <div id="my-skills" style={{ paddingTop: "0.5rem", paddingBottom: "0.5rem" }}>
       <Typography
         variant="h4"
         sx={{ color: "#898574" }}

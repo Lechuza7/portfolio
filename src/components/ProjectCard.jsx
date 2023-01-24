@@ -37,6 +37,10 @@ export default function ProjectCard(project) {
     setExpanded(!expanded);
   };
 
+
+  const [hoverPic, setHoverPic] = useState(false);
+  
+
   return lang?.lang === "esp" ? (
     <Card sx={{ maxWidth: 300, minWidth: 200, margin: 2 }}>
       <CardHeader
@@ -51,7 +55,9 @@ export default function ProjectCard(project) {
       <CardMedia
         component="img"
         height="194"
-        image={project.image}
+        onMouseEnter={() => setHoverPic(true)}
+        onMouseOut={() => setHoverPic(false)}
+        image={hoverPic? project.hoverImage : project.image}
         alt={project.title}
       />
       <CardContent>

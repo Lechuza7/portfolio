@@ -1,6 +1,5 @@
 import { useState, useEffect, useContext } from "react";
 import { LangContext } from "../contexts/LangContext";
-
 import AspectRatio from '@mui/joy/AspectRatio';
 import Box from '@mui/joy/Box';
 import Button from '@mui/joy/Button';
@@ -19,13 +18,15 @@ function CertificateCard(certificate) {
   }, [language]);
 
   return lang?.lang === "esp" ? (
-    <Card variant="outlined" sx={{ width: 320 }}>
-    <Typography level="h2" fontSize="md" sx={{ mb: 0.5 }}>
+    
+    <Card variant="solid" sx={{ width: "45%", length: "65%", margin: "auto", backgroundColor: "rgba(2,2,2,0.2)" }}>
+    <Typography level="h2" fontSize="lg" sx={{ mb: 0.5 }}>
       <b>{certificate.title}</b>
     </Typography>
+    
     <Typography level="body2">{certificate.spDate}</Typography>
 
-    <AspectRatio minHeight="120px" maxHeight="200px" sx={{ my: 2 }}>
+    <AspectRatio sx={{ my: 2, objectFit: "contain", width:"auto" }} >
       <img
         src={certificate.image}
         srcSet={certificate.image}
@@ -33,6 +34,7 @@ function CertificateCard(certificate) {
         alt=""
       />
     </AspectRatio>
+
     <Box sx={{ display: 'flex' }}>
       <div>
         <Typography level="body3">Certificado por:</Typography>
@@ -53,6 +55,7 @@ function CertificateCard(certificate) {
       </Button>      
     </Box>
   </Card>
+  
   ) : (<div>Certificate in progress</div>)
 };
 

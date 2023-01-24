@@ -1,11 +1,11 @@
-import React, { useContext, useEffect, useState} from 'react';
+import React, { useContext, useEffect, useState } from "react";
 import { LangContext } from "../contexts/LangContext";
 import certificatesData from "../data/certificates.json";
-import CertificateCard from './CertificateCard';
+import CertificateCard from "./CertificateCard";
 
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 import { Typography, Box } from "@mui/material";
-import Carousel from 'react-material-ui-carousel';
-
 
 function Certificates() {
   const [certificates, setCertificates] = useState([]);
@@ -30,25 +30,35 @@ function Certificates() {
     return <div>Loading...please wait</div>;
   }
 
+  const customRenderThumb = (certificates) =>
+    certificates.map((certificate) => {
+      console.log(certificate);
+      return <img src={certificate.props.image} alt="cover-img" />;
+    });
+
   return lang?.lang === "esp" ? (
-    <div id="my-certificates">
+    <div
+      id="my-certificates"
+      style={{ backgroundColor: "#CBC5AA", paddingTop: "1rem", paddingBottom: "0.3rem" }}
+    >
       <Typography
         variant="h4"
-        sx={{ color: "#898574" }}
+        sx={{ color: "white" }}
         component="div"
         gutterBottom
       >
         Certificados
       </Typography>
-      <Carousel autoPlay={true} >
-      {
-        certificates.map((certificate, i) => {
-          return <CertificateCard key={i} {...certificate}/>
+            
+      <Carousel renderThumbs={customRenderThumb} showStatus={false} >
+        {certificates.map((certificate, i) => {
+          return <CertificateCard key={i} {...certificate} />;
         })}
-    </Carousel>
+      </Carousel>
+  
     </div>
   ) : (
-<div id="my-certificates">
+    <div id="my-certificates">
       <Typography
         variant="h4"
         sx={{ color: "#898574" }}
@@ -57,14 +67,14 @@ function Certificates() {
       >
         Certificates
       </Typography>
-      <Carousel>
-      {
-        certificates.map((certificate, i) => {
-          return <CertificateCard key={i} {...certificate}/>
+
+      <Carousel showArrows={true}>
+        {certificates.map((certificate, i) => {
+          return <CertificateCard key={i} {...certificate} />;
         })}
-    </Carousel>
+      </Carousel>
     </div>
   );
-};
+}
 
 export default Certificates;
