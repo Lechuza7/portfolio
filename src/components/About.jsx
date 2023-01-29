@@ -124,7 +124,7 @@ function About() {
             Linkedin
           </Button>
           <Button
-            href="https://drive.google.com/file/d/1Ek8BfWGN9jn3lqZiJQwctTsSgqbMsPSz/view?usp=sharing"
+            href="https://drive.google.com/file/d/1PTuQe1dVNhQAGwfCPsskgDcudIxCNJGL/view?usp=sharing"
             target="_blank"
             sx={{ textTransform: "none", color: "#CBC5AA", height: "3rem" }}
           >
@@ -141,34 +141,47 @@ function About() {
     </Box>
   ) : (
     <Box
+      id="about-box"
       sx={{
         display: "flex",
         flexDirection: "row",
-        m: 10,
         justifyContent: "center",
-        alignItems: "center",
         flexWrap: "wrap",
+        height: 300,
       }}
     >
-      <Avatar
-        alt="Marc's photo"
-        src={photo}
-        sx={{
-          width: 200,
-          height: 200,
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "center",
-        }}
-      />
       <Box
+        id="avatar-box"
+        sx={{
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        <Avatar
+          id="avatar-pic"
+          alt="Marc's photo"
+          src={photo}
+          sx={{
+            width: 200,
+            height: 200,
+            display: "flex",
+            marginTop: 4,
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        />
+      </Box>
+      <Box
+        id="bio-box"
         sx={{
           display: "flex",
           flexDirection: "column",
           width: 500,
-          height: 250,
-          marginLeft: "2rem",
-          marginTop: "1rem",
+          height: 200,
+          marginLeft: "1rem",
+          marginRight: "1rem",
+          marginTop: "3rem",
         }}
       >
         <Typography

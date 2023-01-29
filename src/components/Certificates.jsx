@@ -5,7 +5,7 @@ import CertificateCard from "./CertificateCard";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import { Typography, Box } from "@mui/material";
+import { Typography } from "@mui/material";
 
 function Certificates() {
   const [certificates, setCertificates] = useState([]);
@@ -32,7 +32,6 @@ function Certificates() {
 
   const customRenderThumb = (certificates) =>
     certificates.map((certificate) => {
-      console.log(certificate);
       return <img src={certificate.props.image} alt="cover-img" />;
     });
 

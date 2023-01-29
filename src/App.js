@@ -1,5 +1,5 @@
 import './App.css';
-import { About, Certificates, Footer, NavBar, Projects, Skills } from "./components";
+import { About, Certificates, Footer, NavBar, Projects, ScrollButton, Skills } from "./components";
 
 function App() {
   
@@ -10,6 +10,7 @@ function App() {
       <NavBar />
       <About />
       <Projects />
+      <ScrollButton />
       <Skills />
       <Certificates />
       <Footer />

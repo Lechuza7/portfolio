@@ -6,3 +6,4 @@ export { default as Skills } from "./Skills";
 export { default as Certificates } from "./Certificates";
 export { default as CertificateCard } from "./CertificateCard";
 export { default as Footer } from "./Footer";
+export { default as ScrollButton } from "./UI/ScrollButton";
