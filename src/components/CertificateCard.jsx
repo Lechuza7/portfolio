@@ -56,7 +56,44 @@ function CertificateCard(certificate) {
     </Box>
   </Card>
   
-  ) : (<div>Certificate in progress</div>)
+  ) : (
+    <Card variant="solid" sx={{ width: "45%", length: "65%", margin: "auto", backgroundColor: "rgba(2,2,2,0.2)" }}>
+    <Typography level="h2" fontSize="lg" sx={{ mb: 0.5 }}>
+      <b>{certificate.title}</b>
+    </Typography>
+    
+    <Typography level="body2">{certificate.enDate}</Typography>
+
+    <AspectRatio sx={{ my: 2, objectFit: "contain", width:"auto" }} >
+      <img
+        src={certificate.image}
+        srcSet={certificate.image}
+        loading="lazy"
+        alt=""
+      />
+    </AspectRatio>
+
+    <Box sx={{ display: 'flex' }}>
+      <div>
+        <Typography level="body3">Certified by:</Typography>
+        <Typography fontSize="lg" fontWeight="lg">
+          {certificate.entity}
+        </Typography>
+      </div>     
+      <Button
+        variant="solid"
+        size="sm"
+        color="primary"
+        aria-label="Certificate"
+        sx={{ ml: 'auto', fontWeight: 600 }}
+      >
+        <Link href={certificate.url} target="_blank" overlay underline="none">
+        <OpenInNew />
+        </Link>
+      </Button>      
+    </Box>
+  </Card>
+  );
 };
 
 export default CertificateCard;

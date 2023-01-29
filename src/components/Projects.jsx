@@ -31,7 +31,7 @@ function Projects() {
   return lang?.lang === "esp" ? (
     <div
       id="my-projects"
-      style={{ backgroundColor: "#CBC5AA", paddingTop: "1rem", paddingBottom: "2rem" }}
+      style={{ backgroundColor: "#CBC5AA", marginTop: "13rem", paddingTop: "2rem", paddingBottom: "2rem" }}
     >
       <Typography
         variant="h4"
@@ -58,7 +58,7 @@ function Projects() {
   ) : (
     <div
       id="my-projects"
-      style={{ backgroundColor: "#CBC5AA", paddingTop: "1rem" }}
+      style={{ backgroundColor: "#CBC5AA", marginTop: "13rem", paddingTop: "2rem", paddingBottom: "2rem" }}
     >
       <Typography
         variant="h4"

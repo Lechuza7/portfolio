@@ -39,7 +39,7 @@ function Certificates() {
   return lang?.lang === "esp" ? (
     <div
       id="my-certificates"
-      style={{ backgroundColor: "#CBC5AA", paddingTop: "1rem", paddingBottom: "0.3rem" }}
+      style={{ backgroundColor: "#CBC5AA", paddingTop: "1rem", paddingBottom: "2rem" }}
     >
       <Typography
         variant="h4"
@@ -58,22 +58,26 @@ function Certificates() {
   
     </div>
   ) : (
-    <div id="my-certificates">
-      <Typography
-        variant="h4"
-        sx={{ color: "#898574" }}
-        component="div"
-        gutterBottom
-      >
-        Certificates
-      </Typography>
+    <div
+    id="my-certificates"
+    style={{ backgroundColor: "#CBC5AA", paddingTop: "1rem", paddingBottom: "2rem" }}
+  >
+    <Typography
+      variant="h4"
+      sx={{ color: "white" }}
+      component="div"
+      gutterBottom
+    >
+      Certificates
+    </Typography>
+          
+    <Carousel renderThumbs={customRenderThumb} showStatus={false} >
+      {certificates.map((certificate, i) => {
+        return <CertificateCard key={i} {...certificate} />;
+      })}
+    </Carousel>
 
-      <Carousel showArrows={true}>
-        {certificates.map((certificate, i) => {
-          return <CertificateCard key={i} {...certificate} />;
-        })}
-      </Carousel>
-    </div>
+  </div>
   );
 }
 

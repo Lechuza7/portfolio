@@ -49,9 +49,7 @@ function NavBar() {
           sx={{ display: "flex", justifyContent: "center" }}
         >
           <Toolbar disableGutters>
-            <LaptopMacIcon
-              sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
-            />
+
 
             <Typography
               variant="h6"
@@ -68,7 +66,7 @@ function NavBar() {
                 textDecoration: "none",
               }}
             >
-              MARC CUESTA
+              BIENVENID@!
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -124,10 +122,7 @@ function NavBar() {
               </Menu>
             </Box>
 
-            <LaptopMacIcon
-              onClick={() => handleClick()}
-              sx={{ display: { xs: "flex", md: "none" }, mr: 1 }}
-            />
+            
 
             <Typography
               variant="h5"
@@ -145,7 +140,7 @@ function NavBar() {
                 textDecoration: "none",
               }}
             >
-              MARC CUESTA
+              WELCOME!
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
@@ -187,9 +182,6 @@ function NavBar() {
           sx={{ display: "flex", justifyContent: "center" }}
         >
           <Toolbar disableGutters>
-            <LaptopMacIcon
-              sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
-            />
 
             <Typography
               variant="h6"
@@ -206,7 +198,7 @@ function NavBar() {
                 textDecoration: "none",
               }}
             >
-              MARC CUESTA
+              WELCOME!
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -262,11 +254,6 @@ function NavBar() {
               </Menu>
             </Box>
 
-            <LaptopMacIcon
-              onClick={() => handleClick()}
-              sx={{ display: { xs: "flex", md: "none" }, mr: 1 }}
-            />
-
             <Typography
               variant="h5"
               noWrap
@@ -283,7 +270,7 @@ function NavBar() {
                 textDecoration: "none",
               }}
             >
-              MARC CUESTA
+              WELCOME!
             </Typography>
 
             <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>

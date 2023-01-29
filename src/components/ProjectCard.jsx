@@ -98,7 +98,9 @@ export default function ProjectCard(project) {
       <CardMedia
         component="img"
         height="194"
-        image={project.image}
+        onMouseEnter={() => setHoverPic(true)}
+        onMouseOut={() => setHoverPic(false)}
+        image={hoverPic? project.hoverImage : project.image}
         alt={project.title}
       />
       <CardContent>

@@ -1,0 +1,26 @@
+@media only screen and (max-width:450px) {
+
+  #about-box {
+    height: 500px;
+  }
+
+  #avatar-pic {
+    width: 110px;
+    height: 110px;
+  }
+
+  #bio-box {
+    width: 450px;
+    height: 300px;
+  }
+} 
+
+@media only screen and (min-width:450px) {
+
+  #avatar-box {
+    height: 395px;
+  }
+}
+
+
+
