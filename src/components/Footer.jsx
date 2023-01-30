@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { LangContext } from "../contexts/LangContext";
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import CvIcon from '@mui/icons-material/ContactPage';
