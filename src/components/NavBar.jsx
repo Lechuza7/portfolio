@@ -8,7 +8,6 @@ import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
-import LaptopMacIcon from "@mui/icons-material/LaptopMac";
 import MenuItem from "@mui/material/MenuItem";
 import { LangContext } from "../contexts/LangContext";
 

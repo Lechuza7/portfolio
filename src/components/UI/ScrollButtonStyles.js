@@ -12,7 +12,7 @@ export const Content = styled.div`
 
 export const Button = styled.div`
   position: fixed;
-  width: 90%;
+  width: 85%;
   left: 50%;
   bottom: 40px;
   height: 20px;

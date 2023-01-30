@@ -98,7 +98,6 @@ function About() {
         >
           <Button
             href="https://github.com/Lechuza7"
-            color="secondary"
             target="_blank"
             sx={{ textTransform: "none", color: "#CBC5AA", height: "3rem" }}
           >
@@ -221,7 +220,6 @@ function About() {
         >
           <Button
             href="https://github.com/Lechuza7"
-            color="secondary"
             target="_blank"
             sx={{ textTransform: "none", color: "#CBC5AA", height: "3rem" }}
           >
