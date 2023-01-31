@@ -41,7 +41,7 @@ function Footer() {
           <LinkedInIcon></LinkedInIcon>
         </Button>
         <Button
-          href="https://drive.google.com/file/d/1PTuQe1dVNhQAGwfCPsskgDcudIxCNJGL/view?usp=sharing"
+          href="https://drive.google.com/file/d/1F6KMXFT-pL1pqOuLmx0jLMJWA9UHNhOw/view?usp=sharing"
           target="_blank"
           sx={{ textTransform: "none", color: "#CBC5AA", height: "3rem" }}
         >
@@ -83,7 +83,7 @@ function Footer() {
         <LinkedInIcon></LinkedInIcon>
       </Button>
       <Button
-        href="https://drive.google.com/file/d/1Ek8BfWGN9jn3lqZiJQwctTsSgqbMsPSz/view?usp=sharing"
+        href="https://drive.google.com/file/d/1PpH5acXKRlGotKgzGYG6T4qgk6EHLXpi/view?usp=sharing"
         target="_blank"
         sx={{ textTransform: "none", color: "#CBC5AA", height: "3rem" }}
       >
