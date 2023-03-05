@@ -17,7 +17,7 @@
     "image": "https://res.cloudinary.com/dyl3cklgp/image/upload/v1673778206/portfolio/furancho-cover_rti9qk.png",
     "hoverImage": "https://res.cloudinary.com/dyl3cklgp/image/upload/v1673778644/portfolio/furancho-hover_vtrwtx.png",
     "techs": "Javascript (ES6), HTML5, CSS3, NodeJS, ExpressJS, MongoDB, Mongoose, Bootstrap, Handlebars, Multer",
-    "url": "https://github.com/furancho-project/furancho-project",
+    "url": "https://furancho-project.vercel.app/furanchos",
     "spDescription": "Furancho Project es mi segundo proyecto, creado en pareja. Se trata de un buscador de furanchos con integración de Google Maps y geolocalización, y registro, sesión y perfil de usuario.",
     "enDescription": "Furancho Project is my second project, created as a couple. It's a furanchos search engine with integration of Google Maps and geolocation, and registration, session and user profile."
   },
