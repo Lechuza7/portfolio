@@ -123,7 +123,7 @@ function About() {
             Linkedin
           </Button>
           <Button
-            href="https://drive.google.com/file/d/1F6KMXFT-pL1pqOuLmx0jLMJWA9UHNhOw/view?usp=sharing"
+            href="https://drive.google.com/file/d/10OAbFwROcQGMCRQhwTW3iBYHqzSNBnUV/view?usp=sharing"
             target="_blank"
             sx={{ textTransform: "none", color: "#CBC5AA", height: "3rem" }}
           >
@@ -245,7 +245,7 @@ function About() {
             Linkedin
           </Button>
           <Button
-            href="https://drive.google.com/file/d/1PpH5acXKRlGotKgzGYG6T4qgk6EHLXpi/view?usp=sharing"
+            href="https://drive.google.com/file/d/1B2ZNHBY_mNk5om5HsOpnZVazgmA3HSF_/view?usp=sharing"
             target="_blank"
             sx={{ textTransform: "none", color: "#CBC5AA", height: "3rem" }}
           >
